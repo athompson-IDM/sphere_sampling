@@ -2,6 +2,8 @@
 
 Some numerical experiments to illustrate part of Lecture 1 in Keith Ball's "An Elementary Introduction to Modern Convex Geometry."  The relevant portions are highlighted yellow in Lecture 1 in [this version of the PDF](ball.pdf).  The source version of the notes was retrieved [from here](http://library.msri.org/books/Book31/files/ball.pdf).
 
+The code runs in Matlab. Tested in R2019b. It might work in Octave but I haven't tested that yet. If it doesn't run in Octave as-is, it probably only needs minor tweaks, because it doesn't use any fancy Matlab toolboxes or anything and it's pretty vanilla.
+
 ## Random sampling of uniformly distributed sphere of volume 1
 
 This is where we sample a uniformly distributed sphere of volume 1 in dimension N.  We only measure x_1 for each sample. Then, we plot the distribution of values of x_1.
