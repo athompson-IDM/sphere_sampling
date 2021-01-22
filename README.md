@@ -2,7 +2,7 @@
 
 ## What is this?
 
-An illustration of the idea that a univariate random normal distribution is a one-dimensional projection of a random uniform distribution in a high-dimensional sphere.
+An illustration of the idea that a univariate normal random distribution is a one-dimensional projection of a uniform random distribution in a high-dimensional sphere.
 
 And, that we can generalize the idea of a high-dimensional sphere to be a high-dimensional ellipsoid instead, and that the length of one of the ellipsoid's axes is connected to the variance of the associated one-dimensionally-projected univariate normal distribution.
 
