@@ -1,6 +1,7 @@
 num_samples = 1e5;
 ruler_dimension = 1;
-num_trials = 50;
+num_trials = 100;
+n_dist_bins=100;
 N = 100;
 % radius of ball of volume 1.
 R = ( gamma(0.5*N+1) / ( pi^(N/2) ) ) ^ (1/N);
@@ -33,16 +34,37 @@ for k = 1:num_trials
     ellipse_as(k,:) = ellipse_a;
     prod_ellipse_a = prod(ellipse_a)
     ellipse_cov = diag(ellipse_a);    
-    X_ellipse = draw_from_ellipsoid(ellipse_cov, zeros(1,N), num_samples);        
+    X_ellipse = draw_from_ellipsoid(ellipse_cov, zeros(1,N), num_samples); 
+    [y_ellipse,bin_ellipse] = hist(X_ellipse(:,ruler_dimension),n_dist_bins);
+    bin_width = bin_ellipse(2) - bin_ellipse(1)
+    figure(1)
+    hold off
+    %y_ellipse_normalized = y_ellipse / sum(y_ellipse);
+    y_ellipse_normalized = y_ellipse / (num_samples*bin_width)
+    %y_ellipse_normalized = y_ellipse_normalized * R * 2 / sqrt(ellipse_a(ruler_dimension));
+    plot(bin_ellipse,y_ellipse_normalized, 'o')
     ellipse_sigmas(k) = std(X_ellipse(:,ruler_dimension));
     ellipse_conds(k)  = cond(ellipse_cov);
+    
+    % normal dist w/ equiv sigma
+    nd = ellipse_sigmas(k) * randn(num_samples,1);
+    [y_nd,bin_nd] = hist(nd,n_dist_bins);
+    bin_width = bin_nd(2) - bin_nd(1)
+    %y_nd_normalized = y_nd / sum(y_nd);
+    y_nd_normalized = y_nd / (num_samples*bin_width);
+    hold on
+    plot(bin_nd, y_nd_normalized, '-')
+    axis([-1,1,0,10])
+    legend('sampled ellipse','normal dist w/ same sigma')
+    title(sprintf('Distribution of x_%d in uniformly sampled random ellipse of volume 1, N=%d',ruler_dimension,N),'fontsize',8)
+    pause
     
 end
 
 
-figure(1)
+figure(2)
 plot(sqrt(ellipse_as(:,ruler_dimension)),ellipse_sigmas,'bo')
-xlabel('ellipse axis in measured dimension')
+xlabel('sqrt ellipse axis in measured dimension')
 ylabel('ellipse-derived distribution sigma')
 title(sprintf('N = %d',N))
 saveas(gcf,'sigma_vs_ellipse_cov_trials_fixed_N.png')
