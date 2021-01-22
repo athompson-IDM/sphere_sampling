@@ -20,7 +20,7 @@ If you run [sphere_sampling.m](sphere_sampling.m) (Matlab script), it will gener
 
 1. [samples_x1.png](samples_x1.png) - Illustrates the sampling process described above, for various values of N.
 2. [samples_ellipse.png](samples_ellipse.png) - Same as last item, but now in each dimension N, we use a randomly generated ellipse of volume 1 in that dimension, instead of a sphere. The ellipse is fixed for all samples in that dimension. As we vary N we are also generating a new ellipse each time, so there's really two things changing for each subplot.
-3. [pairwise_distance_distributions.png](pairwise_distance_distributions.png) - Measures distribution of pairwise distances between points for each value N.
+3. [pairwise_distance_distributions.png](pairwise_distance_distributions.png) - Measures distribution of pairwise distances between points for each value N, for same experiments shown in #1.
 4. [pairwise_distance_distributions_ellipse.png](pairwise_distance_distributions_ellipse.png) - Same as last item, but the ellipse version described in item #2.
 5. [pairwise_distances_vs_N.png](pairwise_distances_vs_N.png) - Mean distance between points as a function of N, for the scenarios shown in #1.
 
