@@ -1,6 +1,14 @@
 # sphere_sampling
 
-Some numerical experiments to illustrate part of Lecture 1 in Keith Ball's "An Elementary Introduction to Modern Convex Geometry."  The relevant portions are highlighted yellow in Lecture 1 in [this version of the PDF](ball.pdf).  The source version of the notes was retrieved [from here](http://library.msri.org/books/Book31/files/ball.pdf).
+## What is this?
+
+An illustration of the idea that a univariate normal distribution is a one-dimensional projection of a uniform random distribution in a high-dimensional sphere.
+
+And, that we can generalize the idea of a high-dimensional sphere to be a high-dimensional ellipsoid instead, and that the lengths of the ellipsoid's axes are connected to the variance of the associated one-dimensionally-proected univariate normal distribution.
+
+## Huh?
+
+These are some numerical experiments to illustrate part of Lecture 1 in Keith Ball's "An Elementary Introduction to Modern Convex Geometry."  The relevant portions are highlighted yellow in Lecture 1 in [this version of the PDF](ball.pdf).  The source version of the notes was retrieved [from here](http://library.msri.org/books/Book31/files/ball.pdf).
 
 The code runs in Matlab. Tested in R2019b. It might work in Octave but I haven't tested that yet. If it doesn't run in Octave as-is, it probably only needs minor tweaks, because it doesn't use any fancy Matlab toolboxes or anything and it's pretty vanilla.
 
