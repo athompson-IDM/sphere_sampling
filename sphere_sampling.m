@@ -144,13 +144,6 @@ text(xt, yt, caption, 'FontSize', 10, 'Color', 'k', 'FontWeight', 'bold');
 
 saveas(gcf,'pairwise_distances_vs_N.png')
 
-figure(6)
-hold off
-semilogx(ellipse_conds,ellipse_sigmas,'bo')
-xlabel('ellipse covariance matrix condition number')
-ylabel('ellipse-derived distribution sigma')
-saveas(gcf,'sigma_vs_ellipse_cov.png')
-
 figure(1)
 saveas(gcf,'samples_x1.png')
 figure(2)
