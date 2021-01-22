@@ -6,7 +6,7 @@ Some numerical experiments to illustrate part of Lecture 1 in Keith Ball's "An E
 
 This is where we sample a uniformly distributed sphere of volume 1 in dimension N.  We only measure x_1 for each sample. Then, we plot the distribution of values of x_1.
 
-If you run (sphere_sampling.m)[sphere_sampling.m] (Matlab script), it will generate the following figures:
+If you run [sphere_sampling.m](sphere_sampling.m) (Matlab script), it will generate the following figures:
 
 1. [samples_x1.png](samples_x1.png) - Illustrates the sampling process described above, for various values of N.
 2. [samples_ellipse.png](samples_ellipse.png) - Same as last item, but now in each dimension N, we use a randomly generated ellipse of volume 1 in that dimension, instead of a sphere. The ellipse is fixed for all samples in that dimension. As we vary N we are also generating a new ellipse each time, so there's really two things changing for each subplot.
