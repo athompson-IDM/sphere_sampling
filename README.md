@@ -14,7 +14,7 @@ The code runs in Matlab. Tested in R2019b. It might work in Octave but I haven't
 
 ## Uniformly random sampling of sphere of volume 1
 
-This is where we uniformly randomly sample a sphere of volume 1 in dimension N.  We only measure x_1 for each sample.  That is, for each sample, we record the value of the sampled point's coordinate in dimension 1. The sphere has N-1 other dimensions, and thus each random sample has N-1 other coordinates. We throw those other N-1 coordinates away. Then, we plot the distribution of values of x_1 across all thes random samples we've taken.  The choice of x_1 is arbitrary; any other coordinate x_j would do for performing the measurements, and the illustration would be the same.
+This is where we uniformly randomly sample a sphere of volume 1 in dimension N.  We only measure x_1 for each sample.  That is, for each sample, we record the value of the sampled point's coordinate in dimension 1. The sphere has N-1 other dimensions, and thus each random sample has N-1 other coordinates. We throw those other N-1 coordinates away. Then, we plot the distribution of values of x_1 across all the random samples we've taken.  The choice of x_1 is arbitrary; any other coordinate x_j would do for performing the measurements, and the illustration would be the same.
 
 What you'll see is that as N gets larger, the distribution of x_1 starts to look like a normal distribution.
 
