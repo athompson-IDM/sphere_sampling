@@ -32,7 +32,7 @@ Same as above, but now we squeeze/stretch/distort the sphere into an ellipse, st
 
 What you'll see is that the variance of the distribution has to do with the width of the ellipse in the dimension that we are measuring, which is x_1 but could be any x_j. 
 
-For these experiments, the ellipse axes are aligned with the cartesian axes, and we sample on a cartesian axis. So the covariance matrix is a diagonal matrix. It would be interesting to further illustrate the scenario when the ellipse is not aligned to the cartesian axes, but the sampling is still along a projection to a cartesian axis, in which case the covariance matrix would not be a diagonal matrix.
+For these experiments, the ellipse axes are aligned with the cartesian axes, and we sample on a cartesian axis. So the covariance matrix is a diagonal matrix. It would be interesting to further illustrate the scenario when the ellipse is not aligned to the cartesian axes, but the sampling is still along a projection to a cartesian axis, in which case the covariance matrix would not be a diagonal matrix. Or, equivalently, to leave the ellipse centered on the cartesian axes, and have the sampling axis not be one of the cartesian axes.
 
 If you run [ellipse_sampling_fixed_N.m](ellipse_sampling_fixed_N.m), it will generate the following figures:
 
