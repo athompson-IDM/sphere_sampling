@@ -14,7 +14,7 @@ The code runs in Matlab. Tested in R2019b. It might work in Octave but I haven't
 
 ## Uniformly random sampling of sphere of volume 1
 
-This is where we uniformly sample a sphere of volume 1 in dimension N.  We only measure x_1 for each sample. Then, we plot the distribution of values of x_1.
+This is where we uniformly sample a sphere of volume 1 in dimension N.  We only measure x_1 for each sample.  That is, the value of the coordinate in dimension 1. (The sphere has N-1 other dimensions). Then, we plot the distribution of values of x_1.  The choice of x_1 is arbitrary; any dimension would do for performing the measurements, and the illustration will be the same.
 
 If you run [sphere_sampling.m](sphere_sampling.m) (Matlab script), it will generate the following figures:
 
