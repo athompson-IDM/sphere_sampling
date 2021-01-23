@@ -39,7 +39,7 @@ If you run [ellipse_sampling_fixed_N.m](ellipse_sampling_fixed_N.m), it will gen
 
 For this script, leave pause mode disabled to generate and save #6.  It will also generate and save #7 for the last trial.  Turn pause mode on to see #7 for each trial, and press a key to continue each time.
 
-For these experiments, the ellipse axes are aligned with the cartesian axes, and we sample on a cartesian axis. So the covariance matrix of the N-dimensional ellipse axes is a diagonal matrix. It would be interesting to further illustrate a situation where the ellipse is not aligned to the cartesian axes, but the sampling is still along a projection to a cartesian axis, in which case the ellipse's covariance matrix would not be a diagonal matrix. Or, equivalently, to leave the ellipse centered on the cartesian axes, and have the sampling axis not be one of the cartesian axes. 
+For these experiments, the ellipse axes are aligned with the cartesian axes, and we sample on a cartesian axis. So the covariance matrix of the N-dimensional ellipse axes is a diagonal matrix. It would be interesting to further illustrate a situation where the ellipse is not aligned to the cartesian axes, but the sampling is still along a projection to a cartesian axis, in which case the ellipse axes' covariance matrix would not be a diagonal matrix. Or, equivalently, to leave the ellipse centered on the cartesian axes, and have the sampling axis not be one of the cartesian axes. 
 
 In either case, we're only sampling a single coordinate x_1 (could be any 1-dimensional subspace), and so we don't have covariance of random variables. 
 
