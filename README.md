@@ -41,6 +41,6 @@ For this script, leave pause mode disabled to generate and save #6.  It will als
 
 For these experiments, the ellipse axes are aligned with the cartesian axes, and we sample on a cartesian axis. So the covariance matrix of the N-dimensional ellipse is a diagonal matrix. It would be interesting to further illustrate a situation where the ellipse is not aligned to the cartesian axes, but the sampling is still along a projection to a cartesian axis, in which case the ellipse's covariance matrix would not be a diagonal matrix. Or, equivalently, to leave the ellipse centered on the cartesian axes, and have the sampling axis not be one of the cartesian axes. 
 
-In either case, we're only sampling a single coordinate x_1 (generalizes to any x_j), and so we don't have covariance of random variables. 
+In either case, we're only sampling a single coordinate x_1 (could be any 1-dimensional subspace), and so we don't have covariance of random variables. 
 
 One thing to build on here would be to illustrate a connection to projections to two or more axes, and how the orientations of the measured axes relates to the orientation of the ellipse, which should tie to the notion of random variable covariance matrices.
