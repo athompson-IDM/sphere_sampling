@@ -32,11 +32,11 @@ Same as above, but now we squeeze/stretch/distort the sphere into an ellipse, st
 
 What you'll see is that the variance of the distribution has to do with the width of the ellipse in the dimension that we are measuring, which is x_1 but could be any x_j. 
 
-For these experiments, the ellipse axes are aligned with the cartesian axes, and we sample on a cartesian axis. So the covariance matrix is a diagonal matrix. It would be interesting to further illustrate the scenario when the ellipse is not aligned to the cartesian axes, but the sampling is still along a projection to a cartesian axis, in which case the covariance matrix would not be a diagonal matrix. Or, equivalently, to leave the ellipse centered on the cartesian axes, and have the sampling axis not be one of the cartesian axes.
-
 If you run [ellipse_sampling_fixed_N.m](ellipse_sampling_fixed_N.m), it will generate the following figures:
 
 6. [sigma_vs_ellipse_cov_trials_fixed_N.png](sigma_vs_ellipse_cov_trials_fixed_N.png) - For a fixed N = 100, generates many random ellipses and does the same sampling process described above. Illustrates the sampled distribution sigma vs the (square root of) the ellipse axis length in the measured dimension.
 7. [coplot_sampled_ellipse_w_normal_dist_of_equivalent_sigma.png](coplot_sampled_ellipse_w_normal_dist_of_equivalent_sigma.png) - For one of the trials in #6, co-plots the sampled ellipse distribution vs a normal distribution with the same standard deviation. If you turn on "pause mode" in [ellipse_sampling_fixed_N.m](ellipse_sampling_fixed_N.m) then you can run this trial over and over again and see how it looks for each trial.
 
 For this script, leave pause mode disabled to generate and save #6.  It will also generate and save #7 for the last trial.  Turn pause mode on to see #7 for each trial, and press a key to continue each time.
+
+For these experiments, the ellipse axes are aligned with the cartesian axes, and we sample on a cartesian axis. So the covariance matrix is a diagonal matrix. It would be interesting to further illustrate a situation where the ellipse is not aligned to the cartesian axes, but the sampling is still along a projection to a cartesian axis, in which case the covariance matrix would not be a diagonal matrix. Or, equivalently, to leave the ellipse centered on the cartesian axes, and have the sampling axis not be one of the cartesian axes.
