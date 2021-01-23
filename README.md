@@ -14,7 +14,9 @@ The code runs in Matlab. Tested in R2019b. It might work in Octave but I haven't
 
 ## Uniformly random sampling of sphere of volume 1
 
-This is where we uniformly randomly sample a sphere of volume 1 in dimension N.  We only measure x_1 for each sample.  That is, for each sample, we record the value of the sampled point's coordinate in dimension 1. The sphere has N-1 other dimensions, and thus each random sample has N-1 other coordinates. We throw those other N-1 coordinates away. Then, we plot the distribution of values of x_1.  The choice of x_1 is arbitrary; any other coordinate x_j would do for performing the measurements, and the illustration would be the same.
+This is where we uniformly randomly sample a sphere of volume 1 in dimension N.  We only measure x_1 for each sample.  That is, for each sample, we record the value of the sampled point's coordinate in dimension 1. The sphere has N-1 other dimensions, and thus each random sample has N-1 other coordinates. We throw those other N-1 coordinates away. Then, we plot the distribution of values of x_1 across all thes random samples we've taken.  The choice of x_1 is arbitrary; any other coordinate x_j would do for performing the measurements, and the illustration would be the same.
+
+What you'll see is that as N gets larger, the distribution of x_1 starts to look like a normal distribution.
 
 If you run [sphere_sampling.m](sphere_sampling.m) (Matlab script), it will generate the following figures:
 
@@ -27,6 +29,10 @@ If you run [sphere_sampling.m](sphere_sampling.m) (Matlab script), it will gener
 ## Uniformly random sampling of random ellipse of volume 1
 
 Same as above, but now we squeeze/stretch/distort the sphere into an ellipse, still of volume 1.  The length of the axes are randomly generated but constrained so that the volume of the ellipse is 1.
+
+What you'll see is that the variance of the distribution has to do with the width of the ellipse in the dimension that we are measuring, which is x_1 but could be any x_j. 
+
+For these experiments, the ellipse axes are aligned with the cartesian axes. So the covariance matrix is a diagonal matrix. It would be interesting to think about illustrating the scenario when the ellipse is not aligned to the cartesian axes, but the sampling is still along a projection to a cartesian axis, in which case the covariance matrix would not be a diagonal matrix.
 
 If you run [ellipse_sampling_fixed_N.m](ellipse_sampling_fixed_N.m), it will generate the following figures:
 
