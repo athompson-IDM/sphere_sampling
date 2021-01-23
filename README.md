@@ -26,7 +26,7 @@ If you run [sphere_sampling.m](sphere_sampling.m) (Matlab script), it will gener
 
 ## Uniformly random sampling of random ellipse of volume 1
 
-Same as above, but now we squeeze the sphere into an ellipse, still of volume 1.  The length of the axes are randomly generated but constrained so that the volume of the ellipse is 1.
+Same as above, but now we squeeze/stretch/distort the sphere into an ellipse, still of volume 1.  The length of the axes are randomly generated but constrained so that the volume of the ellipse is 1.
 
 If you run [ellipse_sampling_fixed_N.m](ellipse_sampling_fixed_N.m), it will generate the following figures:
 
