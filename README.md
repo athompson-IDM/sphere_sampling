@@ -12,9 +12,9 @@ These are some numerical experiments to illustrate part of Lecture 1 in Keith Ba
 
 The code runs in Matlab. Tested in R2019b. It might work in Octave but I haven't tested that yet. If it doesn't run in Octave as-is, it probably only needs minor tweaks, because it doesn't use any fancy Matlab toolboxes or anything and it's pretty vanilla.
 
-## Random sampling of uniformly distributed sphere of volume 1
+## Uniformly random sampling of sphere of volume 1
 
-This is where we sample a uniformly distributed sphere of volume 1 in dimension N.  We only measure x_1 for each sample. Then, we plot the distribution of values of x_1.
+This is where we uniformly sample a sphere of volume 1 in dimension N.  We only measure x_1 for each sample. Then, we plot the distribution of values of x_1.
 
 If you run [sphere_sampling.m](sphere_sampling.m) (Matlab script), it will generate the following figures:
 
@@ -24,7 +24,7 @@ If you run [sphere_sampling.m](sphere_sampling.m) (Matlab script), it will gener
 4. [pairwise_distance_distributions_ellipse.png](pairwise_distance_distributions_ellipse.png) - Same as last item, but the ellipse version of the experiment described in item #2.
 5. [pairwise_distances_vs_N.png](pairwise_distances_vs_N.png) - Mean distance between points as a function of N, for the scenarios shown in #1.
 
-## Random sampling of uniformly distributed random ellipse of volume 1
+## Uniformly random sampling of random ellipse of volume 1
 
 Same as above, but now we squeeze the sphere into an ellipse, still of volume 1.  The length of the axes are randomly generated but constrained so that the volume of the ellipse is 1.
 
